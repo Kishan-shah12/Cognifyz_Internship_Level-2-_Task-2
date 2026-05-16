@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Responsive Web Design</title>
+    <!-- Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="nav-logo">Nexus<span class="highlight">UI</span></a>
+            
+            <!-- Pure CSS Checkbox Hack -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </label>
+
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#layout-demo">Architecture</a></li>
+                <li><a href="#contact" class="btn btn-primary">Get Started</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Mastering <span class="gradient-text">Responsive</span> Design</h1>
+            <p>Experience a seamless, multi-column layout on desktop that gracefully adapts into a powerful mobile experience. Built entirely with pure HTML5 and CSS3.</p>
+            <div class="hero-buttons">
+                <a href="#features" class="btn btn-primary">Explore Features</a>
+                <a href="#layout-demo" class="btn btn-secondary">View Architecture</a>
+            </div>
+        </div>
+        <div class="hero-image-container">
+            <img src="hero_workspace.png" alt="Modern Developer Workspace showing abstract UI lines" class="hero-image">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Premium Features</h2>
+                <p>Everything you need for a modern, highly performant web application.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="icon-wrapper">🚀</div>
+                    <h3>Blazing Fast</h3>
+                    <p>No heavy frameworks means our CSS parses instantly, ensuring lightning-fast load times across all network conditions.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon-wrapper">🎨</div>
+                    <h3>Modern Aesthetics</h3>
+                    <p>Custom CSS variables, gradients, glassmorphism, and micro-animations provide a top-tier visual experience.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="icon-wrapper">📱</div>
+                    <h3>Fully Responsive</h3>
+                    <p>Meticulously crafted media queries adapt the layout to any screen size flawlessly, from tiny smartphones to massive monitors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area & Sidebar (The Core Requirement) -->
+    <section id="layout-demo" class="container layout-section">
+        <div class="section-header text-center">
+            <h2>The Layout Engine</h2>
+            <p>Our core grid dynamically shifts based on your viewport, demonstrating a robust multi-column to single-column degradation.</p>
+        </div>
+        
+        <div class="layout-grid">
+            <!-- Main Column -->
+            <main class="main-content">
+                <article class="card interactive-card">
+                    <img src="feature_design.png" alt="Abstract 3D UI UX Design floating panels" class="card-img">
+                    <div class="card-body">
+                        <h3>Fluid Typography & Elements</h3>
+                        <p>Text and UI components scale perfectly using relative units like REMs and percentages. This guarantees legibility and aesthetic balance across all devices. We avoid fixed pixel widths to ensure nothing ever overflows the viewport.</p>
+                        <a href="#" class="read-more">Discover the math behind it &rarr;</a>
+                    </div>
+                </article>
+                <article class="card interactive-card">
+                    <div class="card-body">
+                        <h3>Why Mobile-First?</h3>
+                        <p>Starting with mobile ensures our core experience is bulletproof. We then progressively enhance the design with complex CSS Grids and Flexbox properties as screen real estate increases.</p>
+                        <ul class="feature-list">
+                            <li>✓ Optimized Mobile Performance</li>
+                            <li>✓ Better SEO Rankings</li>
+                            <li>✓ Simplified CSS Architecture</li>
+                        </ul>
+                    </div>
+                </article>
+            </main>
+
+            <!-- Sidebar Column -->
+            <aside class="sidebar">
+                <div class="widget glass-widget">
+                    <h3>About the Developer</h3>
+                    <div class="author-profile">
+                        <div class="avatar">KS</div>
+                        <div>
+                            <h4>Front-End Intern</h4>
+                            <p>Crafting digital experiences.</p>
+                        </div>
+                    </div>
+                    <p class="mt-1">Dedicated to building clean, accessible, and highly performant web applications using modern web standards without relying heavily on bloated frameworks.</p>
+                </div>
+                <div class="widget gradient-widget">
+                    <h3>Core Technologies</h3>
+                    <div class="tech-tags">
+                        <span class="tag">HTML5 Semantics</span>
+                        <span class="tag">CSS3 Custom Properties</span>
+                        <span class="tag">CSS Grid</span>
+                        <span class="tag">Flexbox</span>
+                        <span class="tag">Media Queries</span>
+                    </div>
+                </div>
+                <div class="widget">
+                    <h3>Newsletter</h3>
+                    <p>Get the latest web design tips directly in your inbox.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing! We will send you updates soon.');">
+                        <input type="email" placeholder="Enter your email" required class="input-field">
+                        <button type="submit" class="btn btn-primary w-100 mt-1">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Nexus<span class="highlight">UI</span></h3>
+                <p>Pushing the boundaries of vanilla web development. Building a better web, one breakpoint at a time.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#layout-demo">Architecture</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">GH</a>
+                    <a href="#" class="social-icon">IN</a>
+                    <a href="#" class="social-icon">TW</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NexusUI Responsive Task. Built with passion and Vanilla CSS. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
